@@ -172,7 +172,8 @@ figure.presentacion img {
 }
 
 article.presentacion-text {
-    width: 100%; 
+    width: 100%;
+    padding-left: 15px;
 }
 
 section#contact p {
