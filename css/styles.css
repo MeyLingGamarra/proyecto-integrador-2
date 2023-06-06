@@ -6,11 +6,32 @@
 }
 
 body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*
     background-color: rgb(248, 222, 231);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: black;
-    line-height: 1.2;
+    line-height: 1.2
+    */
+}
+
+body:before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.8;
+    z-index: -1;
+    background: linear-gradient(rgb(248, 222, 231), black);
 }
 
 ul {
@@ -42,7 +63,6 @@ h1 {
 
 h2 {
     font-size: 30px;
-    /* font-size: 28px; */
 }
 
 h3 {
@@ -66,8 +86,8 @@ header {
     background-color: #e6c4c4;
     width: 100%;
     padding: 10px;
-    /* overflow: hidden; */ /* sacar */
-    height: 90px;
+    /* overflow: hidden; */  /*sacar */
+    height: 70px;
     left: 0; 
     box-shadow: 0 3px 10px -5px #5f5f5f;
 }
@@ -105,6 +125,7 @@ li.menu-item a {
 
 li.menu-item:hover,
 li.menu-item.active {
+    border-radius: 20px;
     background: rgb(218, 166, 183);
     transition: background-color 0.3s;
 }
@@ -182,7 +203,7 @@ section#contact p {
 }
 
 article.hablemos {
-    background: #d88ac7;
+    background: rgb(218, 166, 183);
     text-align: center;
     padding: 20px;
     border-radius: 10px;
@@ -209,8 +230,9 @@ img.redes {
 }
 
 footer {
-    background-color: #e6c4c4;
-    height: 90px;
+    background-color: rgb(218, 166, 183);
+    
+    height: 70px;
     display: flex;
     /* flex-direction: row; */ /* sacar */
     align-items: center;
