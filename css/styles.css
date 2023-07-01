@@ -31,7 +31,7 @@ body:before {
     position: fixed;
     opacity: 0.8;
     z-index: -1;
-    background: linear-gradient(rgb(248, 222, 231), black);
+    background: linear-gradient(rgb(119, 117, 117), rgb(190, 143, 143));
 }
 
 ul {
